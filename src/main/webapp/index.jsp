@@ -23,7 +23,7 @@
         daysValidation = (boolean) request.getAttribute("daysValidation");
     }
     if (!daysValidation) {
-        out.print(" <h3> Количество дней необходимо указать целым числом от 1 до 16 </h3>");
+        out.print(" <h3> Количество дней необходимо указать целым числом от 1 до 10 </h3>");
     }
 %>
 <form action="/forecast" method="post">
@@ -44,7 +44,7 @@
     <input type="submit" name="city" value="Москва"/>
     <input type="submit" name="city" value="Санкт-Петербург"/>
     <input type="submit" name="city" value="Казань"/>
-    <input type="submit" name="city" value="Владовосток"/>
+    <input type="submit" name="city" value="Владивосток"/>
 </form>
 
 </body>
